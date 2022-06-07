@@ -62,4 +62,27 @@ Public Class FRM_Paieses
 
     End Sub
 
+    Protected Sub btn_Modificar_Click(sender As Object, e As EventArgs) Handles btn_Modificar.Click
+        If txt_Id.Text <> Nothing And txt_Nombre.Text <> Nothing Then
+
+            OTipos = New Tipos
+            oDs = New Data.DataSet
+            oDs = OTipos.Buscar_ID(txt_Id.Text)
+            If oDs.Tables(0).Rows.Count > 0 Then
+                oDs = New Data.DataSet
+                OTipos = New Tipos
+                OTipos.Modificar(txt_Id.Text, txt_Nombre.Text)
+                cargar_Grilla()
+                Limpiar()
+                lbl_Mensaje.ForeColor = Drawing.Color.Green
+                lbl_Mensaje.Text = "Modificado Correctamente :)"
+            Else
+                lbl_Mensaje.ForeColor = Drawing.Color.Red
+                lbl_Mensaje.Text = "Error ID Incorrecto :("
+            End If
+        Else
+            lbl_Mensaje.ForeColor = Drawing.Color.Red
+            lbl_Mensaje.Text = "Complete los campos vacios :("
+        End If
+    End Sub
 End Class
