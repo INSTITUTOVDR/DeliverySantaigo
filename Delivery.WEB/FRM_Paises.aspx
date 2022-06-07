@@ -64,7 +64,7 @@
                     </td>
                     <td>
                         
-                        <asp:FileUpload ID="btn_SubirImagen" runat="server"/>
+                        <asp:FileUpload ID="btn_SubirImagen" runat="server" />
 
                     </td>
                 </tr>
@@ -93,5 +93,18 @@
             </table>
         </div>
     </form>
+    <%--<script>
+        function test(input) {
+            var imagen = input.
+            console.log(imagen)
+            document.getElementById("img_Pais").src = imagen
+            //var reader = new FileReader();
+
+            //reader.onload = function (e) {
+            //    console.log(e.target.result)
+            //    document.getElementById("img_Pais").src = e.target.result
+            //     };
+        }
+    </script>--%>
 </body>
 </html>

@@ -95,4 +95,33 @@ Public Class FRM_Paieses
             lbl_Mensaje.Text = "Complete los campos vacios :("
         End If
     End Sub
+
+    Protected Sub btn_Desactivar_Click(sender As Object, e As EventArgs) Handles btn_Desactivar.Click
+
+    End Sub
+
+    Protected Sub btn_ConsultarID_Click(sender As Object, e As EventArgs) Handles btn_ConsultarID.Click
+        If txt_Id.Text <> Nothing Then
+            oDs = New Data.DataSet
+            OPaises = New Paises
+            oDs = OPaises.BuscarPorID(txt_Id.Text)
+            If oDs.Tables(0).Rows.Count > 0 Then
+                grd_Lista.DataSource = oDs.Tables(0)
+                grd_Lista.DataBind()
+                Limpiar()
+                lbl_Mensaje.ForeColor = Drawing.Color.Green
+                lbl_Mensaje.Text = "Encontrado Correctamente :)"
+            Else
+                lbl_Mensaje.ForeColor = Drawing.Color.Red
+                lbl_Mensaje.Text = "Error ID Incorrecto :("
+            End If
+        Else
+            lbl_Mensaje.ForeColor = Drawing.Color.Red
+            lbl_Mensaje.Text = "Complete los campos vacios :("
+        End If
+    End Sub
+
+    Protected Sub btn_ConsultarTodo_Click(sender As Object, e As EventArgs) Handles btn_ConsultarTodo.Click
+        cargar_Grilla()
+    End Sub
 End Class
