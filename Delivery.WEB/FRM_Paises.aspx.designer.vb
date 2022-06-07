@@ -41,6 +41,15 @@ Partial Public Class FRM_Paieses
     Protected WithEvents btn_Cargar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
+    '''Control btn_ConsultarID.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btn_ConsultarID As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''Control txt_Descripcion.
     '''</summary>
     '''<remarks>
@@ -57,6 +66,15 @@ Partial Public Class FRM_Paieses
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents btn_Modificar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control btn_ConsultarTodo.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btn_ConsultarTodo As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''Control txt_Reducida.
@@ -77,15 +95,6 @@ Partial Public Class FRM_Paieses
     Protected WithEvents btn_Desactivar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control img_Pais.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents img_Pais As Global.System.Web.UI.WebControls.Image
-
-    '''<summary>
     '''Control btn_SubirImagen.
     '''</summary>
     '''<remarks>
@@ -102,24 +111,6 @@ Partial Public Class FRM_Paieses
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents lbl_Mensaje As Global.System.Web.UI.WebControls.Label
-
-    '''<summary>
-    '''Control btn_ConsultarID.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents btn_ConsultarID As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
-    '''Control btn_ConsultarTodo.
-    '''</summary>
-    '''<remarks>
-    '''Campo generado automáticamente.
-    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-    '''</remarks>
-    Protected WithEvents btn_ConsultarTodo As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''Control grd_Lista.

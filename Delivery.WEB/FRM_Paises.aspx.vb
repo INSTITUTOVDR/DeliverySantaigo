@@ -30,7 +30,6 @@ Public Class FRM_Paieses
         txt_Descripcion.Text = Nothing
         txt_Id.Text = Nothing
         txt_Reducida.Text = Nothing
-        img_Pais = Nothing
         btn_SubirImagen = Nothing
 
     End Function
@@ -97,7 +96,26 @@ Public Class FRM_Paieses
     End Sub
 
     Protected Sub btn_Desactivar_Click(sender As Object, e As EventArgs) Handles btn_Desactivar.Click
-
+        If txt_Id.Text <> Nothing Then
+            OPaises = New Paises
+            oDs = New Data.DataSet
+            oDs = OPaises.BuscarPorID(txt_Id.Text)
+            If oDs.Tables(0).Rows.Count > 0 Then
+                oDs = New Data.DataSet
+                OPaises = New Paises
+                OPaises.Desactivar(txt_Id.Text, 0)
+                cargar_Grilla()
+                Limpiar()
+                lbl_Mensaje.ForeColor = Drawing.Color.Green
+                lbl_Mensaje.Text = "Modificado Correctamente :)"
+            Else
+                lbl_Mensaje.ForeColor = Drawing.Color.Red
+                lbl_Mensaje.Text = "Error ID Incorrecto :("
+            End If
+        Else
+            lbl_Mensaje.ForeColor = Drawing.Color.Red
+            lbl_Mensaje.Text = "Complete los campos vacios :("
+        End If
     End Sub
 
     Protected Sub btn_ConsultarID_Click(sender As Object, e As EventArgs) Handles btn_ConsultarID.Click
@@ -124,4 +142,6 @@ Public Class FRM_Paieses
     Protected Sub btn_ConsultarTodo_Click(sender As Object, e As EventArgs) Handles btn_ConsultarTodo.Click
         cargar_Grilla()
     End Sub
+
+
 End Class

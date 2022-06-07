@@ -53,5 +53,12 @@ Public Class Paises
             Throw ex
         End Try
     End Function
+    Public Function Desactivar(ByVal ID_Pais As Integer, ByVal Activo As Boolean) As DataSet
+        Try
+            Return oDatabase.ExecuteDataSet("Paises_Desactivar", ID_Pais, Activo)
+        Catch ex As System.Exception
+            Throw ex
+        End Try
+    End Function
 
 End Class
