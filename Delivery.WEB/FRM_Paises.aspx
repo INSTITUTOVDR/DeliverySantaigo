@@ -64,7 +64,7 @@
                     </td>
                     <td>
                         
-                        <asp:FileUpload ID="btn_SubirImagen" runat="server" onchange ="test()" />
+                        <asp:FileUpload ID="btn_SubirImagen" runat="server"/>
 
                     </td>
                 </tr>
@@ -93,10 +93,5 @@
             </table>
         </div>
     </form>
-    <script>
-        function test() {
-            document.getElementById("img_Pais").src = btn_SubirImagen.url   
-        }
-    </script>
 </body>
 </html>

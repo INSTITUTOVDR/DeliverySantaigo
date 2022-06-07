@@ -50,7 +50,7 @@ Public Class FRM_Paieses
             OPaises = New Paises
             OPaises.Agregar(txt_Descripcion.Text, txt_Reducida.Text, urlImagen, 1)
             cargar_Grilla()
-            'Limpiar()
+            Limpiar()
             lbl_Mensaje.ForeColor = Drawing.Color.Green
             lbl_Mensaje.Text = "Cargado Correctamente :)"
         Else
