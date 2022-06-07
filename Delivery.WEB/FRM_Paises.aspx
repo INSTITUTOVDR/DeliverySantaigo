@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="FRM_Paieses.aspx.vb" Inherits="Delivery.WEB.FRM_Paieses" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="FRM_Paises.aspx.vb" Inherits="Delivery.WEB.FRM_Paieses" %>
 
 <!DOCTYPE html>
 
@@ -33,16 +33,16 @@
                 <tr>
                     <td class="auto-style2">ID</td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="TextBox1" runat="server" Width="200px"></asp:TextBox>
+                        <asp:TextBox ID="txt_Id" runat="server" Width="200px"></asp:TextBox>
                     </td>
                     <td class="auto-style1">
-                        <asp:Button ID="btn_Cargar" runat="server" Text="Cargar" Width="200px" />
+                        <asp:Button ID="btn_Cargar" runat="server" Text="Guardar" Width="200px" />
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style3">Descripcion</td>
                     <td class="auto-style5">
-                        <asp:TextBox ID="TextBox2" runat="server" Width="200px"></asp:TextBox>
+                        <asp:TextBox ID="txt_Descripcion" runat="server" Width="200px"></asp:TextBox>
                     </td>
                     <td>
                         <asp:Button ID="btn_Modificar" runat="server" Text="Modificar" Width="200px" />
@@ -51,7 +51,7 @@
                 <tr>
                     <td class="auto-style3">Reducida</td>
                     <td class="auto-style5">
-                        <asp:TextBox ID="TextBox3" runat="server" Width="200px"></asp:TextBox>
+                        <asp:TextBox ID="txt_Reducida" runat="server" Width="200px"></asp:TextBox>
                     </td>
                     <td>
                         <asp:Button ID="btn_Desactivar" runat="server" Text="Desativar" Width="200px" />
@@ -64,7 +64,8 @@
                     </td>
                     <td>
                         
-                        <asp:Button ID="btn_BuscarImagen" runat="server" Text="Buscar Imagen" Width="200px" />
+                        <asp:FileUpload ID="btn_SubirImagen" runat="server" onchange ="test()" />
+
                     </td>
                 </tr>
                 <tr>
@@ -80,7 +81,7 @@
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <asp:GridView ID="grd_Error" runat="server">
+                        <asp:GridView ID="grd_Lista" runat="server">
                         </asp:GridView>
                     </td>
                 </tr>
@@ -92,5 +93,10 @@
             </table>
         </div>
     </form>
+    <script>
+        function test() {
+            document.getElementById("img_Pais").src = btn_SubirImagen.url   
+        }
+    </script>
 </body>
 </html>

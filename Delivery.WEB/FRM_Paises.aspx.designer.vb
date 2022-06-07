@@ -23,13 +23,13 @@ Partial Public Class FRM_Paieses
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''Control TextBox1.
+    '''Control txt_Id.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txt_Id As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Control btn_Cargar.
@@ -41,13 +41,13 @@ Partial Public Class FRM_Paieses
     Protected WithEvents btn_Cargar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control TextBox2.
+    '''Control txt_Descripcion.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents TextBox2 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txt_Descripcion As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Control btn_Modificar.
@@ -59,13 +59,13 @@ Partial Public Class FRM_Paieses
     Protected WithEvents btn_Modificar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control TextBox3.
+    '''Control txt_Reducida.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents TextBox3 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txt_Reducida As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Control btn_Desactivar.
@@ -86,13 +86,13 @@ Partial Public Class FRM_Paieses
     Protected WithEvents img_Pais As Global.System.Web.UI.WebControls.Image
 
     '''<summary>
-    '''Control btn_BuscarImagen.
+    '''Control btn_SubirImagen.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btn_BuscarImagen As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btn_SubirImagen As Global.System.Web.UI.WebControls.FileUpload
 
     '''<summary>
     '''Control lbl_Mensaje.
@@ -122,11 +122,11 @@ Partial Public Class FRM_Paieses
     Protected WithEvents btn_ConsultarTodo As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control grd_Error.
+    '''Control grd_Lista.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents grd_Error As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents grd_Lista As Global.System.Web.UI.WebControls.GridView
 End Class

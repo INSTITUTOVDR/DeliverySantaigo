@@ -92,15 +92,15 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FRM_Paieses.aspx" />
+    <Content Include="FRM_Paises.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FRM_Paieses.aspx.designer.vb">
-      <DependentUpon>FRM_Paieses.aspx</DependentUpon>
+    <Compile Include="FRM_Paises.aspx.designer.vb">
+      <DependentUpon>FRM_Paises.aspx</DependentUpon>
     </Compile>
-    <Compile Include="FRM_Paieses.aspx.vb">
-      <DependentUpon>FRM_Paieses.aspx</DependentUpon>
+    <Compile Include="FRM_Paises.aspx.vb">
+      <DependentUpon>FRM_Paises.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -154,6 +154,9 @@
       <Project>{ac954add-fb4d-4cc9-baa5-2adf49644f86}</Project>
       <Name>Delivery.AD</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagenes\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
