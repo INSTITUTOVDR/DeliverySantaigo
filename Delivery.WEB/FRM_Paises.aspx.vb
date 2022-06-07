@@ -63,15 +63,25 @@ Public Class FRM_Paieses
     End Sub
 
     Protected Sub btn_Modificar_Click(sender As Object, e As EventArgs) Handles btn_Modificar.Click
-        If txt_Id.Text <> Nothing And txt_Nombre.Text <> Nothing Then
+        If txt_Id.Text <> Nothing And txt_Descripcion.Text <> Nothing And txt_Reducida.Text <> Nothing And btn_SubirImagen.HasFile = True Then
 
-            OTipos = New Tipos
+            Dim urlImagen As String
+            urlImagen = "/Imagenes/"
+
+            Dim nombre As String = btn_SubirImagen.FileName
+
+            btn_SubirImagen.SaveAs(HttpContext.Current.Server.MapPath("./Imagenes/") & nombre)
+
+
+            urlImagen = urlImagen & nombre
+
+            OPaises = New Paises
             oDs = New Data.DataSet
-            oDs = OTipos.Buscar_ID(txt_Id.Text)
+            oDs = OPaises.BuscarPorID(txt_Id.Text)
             If oDs.Tables(0).Rows.Count > 0 Then
                 oDs = New Data.DataSet
-                OTipos = New Tipos
-                OTipos.Modificar(txt_Id.Text, txt_Nombre.Text)
+                OPaises = New Paises
+                OPaises.Modificar(txt_Id.Text, txt_Descripcion.Text, txt_Reducida.Text, urlImagen, 1)
                 cargar_Grilla()
                 Limpiar()
                 lbl_Mensaje.ForeColor = Drawing.Color.Green
