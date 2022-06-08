@@ -60,5 +60,11 @@ Public Class Paises
             Throw ex
         End Try
     End Function
-
+    Public Function BuscarActivos() As DataSet
+        Try
+            Return oDatabase.ExecuteDataSet("Paises_BuscarActivos")
+        Catch ex As System.Exception
+            Throw ex
+        End Try
+    End Function
 End Class

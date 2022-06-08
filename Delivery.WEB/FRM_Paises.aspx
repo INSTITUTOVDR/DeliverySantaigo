@@ -60,6 +60,7 @@
                     </td>
                     <td>
                         <asp:Button ID="btn_Desactivar" runat="server" Text="Desativar" Width="200px" />
+                        <asp:Button ID="btn_ConsultarActivos" runat="server" Text="Consultar Activos" Width="200px" />
                     </td>
                 </tr>
                 <tr>

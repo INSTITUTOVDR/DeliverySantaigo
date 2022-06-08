@@ -143,5 +143,10 @@ Public Class FRM_Paieses
         cargar_Grilla()
     End Sub
 
-
+    Protected Sub btn_ConsultarActivos_Click(sender As Object, e As EventArgs) Handles btn_ConsultarActivos.Click
+        OPaises = New Paises
+        oDs = OPaises.BuscarActivos()
+        grd_Lista.DataSource = oDs.Tables(0)
+        grd_Lista.DataBind()
+    End Sub
 End Class

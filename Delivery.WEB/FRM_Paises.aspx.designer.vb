@@ -95,6 +95,15 @@ Partial Public Class FRM_Paieses
     Protected WithEvents btn_Desactivar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
+    '''Control btn_ConsultarActivos.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents btn_ConsultarActivos As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
     '''Control btn_SubirImagen.
     '''</summary>
     '''<remarks>
