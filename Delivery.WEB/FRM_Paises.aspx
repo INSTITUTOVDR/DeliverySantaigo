@@ -60,7 +60,7 @@
                 <tr>
                     <td class="auto-style1" colspan="3">
                         <asp:Button ID="Btn_Paises" runat="server" BackColor="#E51727" CssClass="auto-style8" ForeColor="White" Height="50px" Text="Paises" Width="200px" />
-&nbsp;<asp:Button ID="Btn_Paises0" runat="server" BackColor="#E51727" CssClass="auto-style8" ForeColor="White" Height="50px" Text="Paises" Width="200px" />
+&nbsp;<asp:Button ID="Btn_Roles" runat="server" BackColor="#E51727" CssClass="auto-style8" ForeColor="White" Height="50px" Text="Roles" Width="200px" />
 &nbsp;<asp:Button ID="Btn_Paises1" runat="server" BackColor="#E51727" CssClass="auto-style8" ForeColor="White" Height="50px" Text="Paises" Width="200px" />
 &nbsp;<asp:Button ID="Btn_Paises2" runat="server" BackColor="#E51727" CssClass="auto-style8" ForeColor="White" Height="50px" Text="Paises" Width="200px" />
 &nbsp;<asp:Button ID="Btn_Paises3" runat="server" BackColor="#E51727" CssClass="auto-style8" ForeColor="White" Height="50px" Text="Paises" Width="200px" />
@@ -88,7 +88,7 @@
                     <td class="auto-style11" colspan="3">
                         <asp:Button ID="btn_Cargar" runat="server" Text="Guardar" Width="200px" />
                         &nbsp;<asp:Button ID="btn_Modificar" runat="server" Text="Modificar" Width="200px" />
-                        &nbsp;<asp:Button ID="btn_Modificar0" runat="server" Text="Limpiar" Width="200px" />
+                        &nbsp;<asp:Button ID="btn_Limpiar" runat="server" Text="Limpiar" Width="200px" />
                         &nbsp;<asp:Button ID="btn_ConsultarID" runat="server" Text="Consultar x ID" Width="200px" />
                     &nbsp;<asp:Button ID="btn_ConsultarTodo" runat="server" Text="Consultar Todo" Width="200px" />
                     </td>
@@ -124,6 +124,12 @@
                         
                         <asp:FileUpload ID="btn_SubirImagen" runat="server" Width="464px" />
 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">Activo</td>
+                    <td class="auto-style1" colspan="2">
+                        <asp:CheckBox ID="chk_Activo" runat="server" />
                     </td>
                 </tr>
                 <tr>

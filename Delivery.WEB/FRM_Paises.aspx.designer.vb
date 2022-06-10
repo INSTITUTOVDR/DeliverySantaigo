@@ -41,13 +41,13 @@ Partial Public Class FRM_Paieses
     Protected WithEvents Btn_Paises As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control Btn_Paises0.
+    '''Control Btn_Roles.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Btn_Paises0 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents Btn_Roles As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''Control Btn_Paises1.
@@ -104,13 +104,13 @@ Partial Public Class FRM_Paieses
     Protected WithEvents btn_Modificar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
-    '''Control btn_Modificar0.
+    '''Control btn_Limpiar.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents btn_Modificar0 As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents btn_Limpiar As Global.System.Web.UI.WebControls.Button
 
     '''<summary>
     '''Control btn_ConsultarID.
@@ -165,6 +165,15 @@ Partial Public Class FRM_Paieses
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents btn_SubirImagen As Global.System.Web.UI.WebControls.FileUpload
+
+    '''<summary>
+    '''Control chk_Activo.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents chk_Activo As Global.System.Web.UI.WebControls.CheckBox
 
     '''<summary>
     '''Control lbl_Mensaje.
