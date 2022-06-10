@@ -90,6 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FRM_Paises.aspx" />
+    <Content Include="FRM_Roles.aspx" />
     <Content Include="Imagenes\Logo.png" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -99,6 +100,13 @@
     </Compile>
     <Compile Include="FRM_Paises.aspx.vb">
       <DependentUpon>FRM_Paises.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FRM_Roles.aspx.designer.vb">
+      <DependentUpon>FRM_Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FRM_Roles.aspx.vb">
+      <DependentUpon>FRM_Roles.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
