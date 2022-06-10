@@ -150,4 +150,8 @@ Public Class FRM_Paieses
         grd_Lista.DataBind()
 
     End Sub
+
+    Protected Sub btn_Logo_Click(sender As Object, e As ImageClickEventArgs) Handles btn_Logo.Click
+
+    End Sub
 End Class

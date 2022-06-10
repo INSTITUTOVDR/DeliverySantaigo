@@ -17,15 +17,29 @@
         .auto-style3 {
             width: 154px;
         }
-        .auto-style4 {
-            height: 26px;
-            width: 263px;
-        }
-        .auto-style5 {
-            width: 263px;
-        }
         .auto-style6 {
             height: 156px;
+        }
+        .auto-style7 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+        .auto-style8 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+        }
+        .auto-style11 {
+            height: 24px;
+        }
+        .auto-style12 {
+            height: 21px;
+            width: 154px;
+        }
+        .auto-style13 {
+            height: 21px;
+        }
+        .auto-style15 {
+            height: 30px;
         }
     </style>
 </head>
@@ -34,38 +48,79 @@
         <div>
             <table style="width:100%;">
                 <tr>
-                    <td class="auto-style2">ID</td>
-                    <td class="auto-style4">
-                        <asp:TextBox ID="txt_Id" runat="server" Width="200px"></asp:TextBox>
+                    <td colspan="3">
+                        <asp:ImageButton ID="btn_Logo" runat="server" Height="200px" ImageAlign="Middle" ImageUrl="~/Imagenes/Logo.png" Width="250px" />
+&nbsp;<span class="auto-style7"><strong>Delivery - Paises</strong></span></td>
+                </tr>
+                <tr>
+                    <td class="auto-style1" colspan="3">
+                        <hr />
                     </td>
-                    <td class="auto-style1">
+                </tr>
+                <tr>
+                    <td class="auto-style1" colspan="3">
+                        <asp:Button ID="Btn_Paises" runat="server" BackColor="#E51727" CssClass="auto-style8" ForeColor="White" Height="50px" Text="Paises" Width="200px" />
+&nbsp;<asp:Button ID="Btn_Paises0" runat="server" BackColor="#E51727" CssClass="auto-style8" ForeColor="White" Height="50px" Text="Paises" Width="200px" />
+&nbsp;<asp:Button ID="Btn_Paises1" runat="server" BackColor="#E51727" CssClass="auto-style8" ForeColor="White" Height="50px" Text="Paises" Width="200px" />
+&nbsp;<asp:Button ID="Btn_Paises2" runat="server" BackColor="#E51727" CssClass="auto-style8" ForeColor="White" Height="50px" Text="Paises" Width="200px" />
+&nbsp;<asp:Button ID="Btn_Paises3" runat="server" BackColor="#E51727" CssClass="auto-style8" ForeColor="White" Height="50px" Text="Paises" Width="200px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1" colspan="3">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style1" colspan="3">
+                        <asp:GridView ID="grd_Lista" runat="server" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" Width="1020px">
+                            <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
+                            <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="#FFFFCC" />
+                            <PagerStyle BackColor="#FFFFCC" ForeColor="#330099" HorizontalAlign="Center" />
+                            <RowStyle BackColor="White" ForeColor="#330099" />
+                            <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="#663399" />
+                            <SortedAscendingCellStyle BackColor="#FEFCEB" />
+                            <SortedAscendingHeaderStyle BackColor="#AF0101" />
+                            <SortedDescendingCellStyle BackColor="#F6F0C0" />
+                            <SortedDescendingHeaderStyle BackColor="#7E0000" />
+                        </asp:GridView>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style11" colspan="3">
                         <asp:Button ID="btn_Cargar" runat="server" Text="Guardar" Width="200px" />
-                        <asp:Button ID="btn_ConsultarID" runat="server" Text="Consultar x ID" Width="200px" />
+                        &nbsp;<asp:Button ID="btn_Modificar" runat="server" Text="Modificar" Width="200px" />
+                        &nbsp;<asp:Button ID="btn_Modificar0" runat="server" Text="Limpiar" Width="200px" />
+                        &nbsp;<asp:Button ID="btn_ConsultarID" runat="server" Text="Consultar x ID" Width="200px" />
+                    &nbsp;<asp:Button ID="btn_ConsultarTodo" runat="server" Text="Consultar Todo" Width="200px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style1">
+                        &nbsp;</td>
+                    <td class="auto-style1">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">ID</td>
+                    <td class="auto-style1" colspan="2">
+                        <asp:TextBox ID="txt_Id" runat="server" Width="200px"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style3">Descripcion</td>
-                    <td class="auto-style5">
+                    <td colspan="2">
                         <asp:TextBox ID="txt_Descripcion" runat="server" Width="200px"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:Button ID="btn_Modificar" runat="server" Text="Modificar" Width="200px" />
-                        <asp:Button ID="btn_ConsultarTodo" runat="server" Text="Consultar Todo" Width="200px" />
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style3">Reducida</td>
-                    <td class="auto-style5">
+                    <td colspan="2">
                         <asp:TextBox ID="txt_Reducida" runat="server" Width="200px"></asp:TextBox>
-                    </td>
-                    <td>
-                        <asp:Button ID="btn_Desactivar" runat="server" Text="Desativar" Width="200px" />
-                        <asp:Button ID="btn_ConsultarActivos" runat="server" Text="Consultar Activos" Width="200px" />
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style3">Imagen</td>
-                    <td colspan="2">
+                    <td class="auto-style12">Imagen</td>
+                    <td colspan="2" class="auto-style13">
                         
                         <asp:FileUpload ID="btn_SubirImagen" runat="server" Width="464px" />
 
@@ -78,10 +133,25 @@
                         &nbsp;&nbsp;</td>
                 </tr>
                 <tr>
-                    <td colspan="3" class="auto-style6">
-                        <asp:GridView ID="grd_Lista" runat="server">
-                        </asp:GridView>
+                    <td class="auto-style15" colspan="3">
+                        <hr />
                     </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style1" colspan="2">
+                        &nbsp;<asp:Button ID="btn_Cargar0" runat="server" Text="Aceptar" Width="200px" />
+                        &nbsp;<asp:Button ID="btn_Cargar1" runat="server" Text="Cancelar" Width="200px" />
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                    <td class="auto-style1" colspan="2">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="auto-style6">
+                        &nbsp;</td>
                 </tr>
                 </table>
         </div>
