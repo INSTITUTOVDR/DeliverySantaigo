@@ -152,6 +152,6 @@ Public Class FRM_Paieses
     End Sub
 
     Protected Sub btn_Logo_Click(sender As Object, e As ImageClickEventArgs) Handles btn_Logo.Click
-
+        Response.Redirect("Menu.aspx")
     End Sub
 End Class
