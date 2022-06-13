@@ -95,28 +95,7 @@ Public Class FRM_Paieses
         End If
     End Sub
 
-    Protected Sub btn_Desactivar_Click(sender As Object, e As EventArgs) Handles btn_Desactivar.Click
-        If txt_Id.Text <> Nothing Then
-            OPaises = New Paises
-            oDs = New Data.DataSet
-            oDs = OPaises.BuscarPorID(txt_Id.Text)
-            If oDs.Tables(0).Rows.Count > 0 Then
-                oDs = New Data.DataSet
-                OPaises = New Paises
-                OPaises.Desactivar(txt_Id.Text, 0)
-                cargar_Grilla()
-                Limpiar()
-                lbl_Mensaje.ForeColor = Drawing.Color.Green
-                lbl_Mensaje.Text = "Modificado Correctamente :)"
-            Else
-                lbl_Mensaje.ForeColor = Drawing.Color.Red
-                lbl_Mensaje.Text = "Error ID Incorrecto :("
-            End If
-        Else
-            lbl_Mensaje.ForeColor = Drawing.Color.Red
-            lbl_Mensaje.Text = "Complete los campos vacios :("
-        End If
-    End Sub
+
 
     Protected Sub btn_ConsultarID_Click(sender As Object, e As EventArgs) Handles btn_ConsultarID.Click
         If txt_Id.Text <> Nothing Then
@@ -143,13 +122,7 @@ Public Class FRM_Paieses
         cargar_Grilla()
     End Sub
 
-    Protected Sub btn_ConsultarActivos_Click(sender As Object, e As EventArgs) Handles btn_ConsultarActivos.Click
-        OPaises = New Paises
-        oDs = OPaises.BuscarActivos()
-        grd_Lista.DataSource = oDs.Tables(0)
-        grd_Lista.DataBind()
 
-    End Sub
 
     Protected Sub btn_Logo_Click(sender As Object, e As ImageClickEventArgs) Handles btn_Logo.Click
         Response.Redirect("Menu.aspx")
