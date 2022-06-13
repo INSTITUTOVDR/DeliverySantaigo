@@ -155,9 +155,6 @@
             //     };
         }
     </script>--%>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
+  
 </body>
 </html>
