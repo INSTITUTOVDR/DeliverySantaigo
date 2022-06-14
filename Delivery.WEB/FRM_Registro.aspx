@@ -10,6 +10,9 @@
 
         .auto-style1 {
         }
+        #Button1 {
+            width: 13px;
+        }
     </style>
 </head>
 <body>
@@ -54,8 +57,7 @@
                 <td>
                     <asp:TextBox ID="txtConfirmarcontraseña" runat="server" TextMode="Password"></asp:TextBox>
                     <%--<asp:Button ID="Button1" runat="server" Text="Button" />--%>
-                    <button type ="submit" runat="server" ID="Button1" ></button>
-                </td>
+                    <a href="#" onclick="MostrarContraseña()"> <img src="Imagenes/mostrar%20contraseña.png" style="height: 25px; width: 25px" /></a></td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
@@ -75,7 +77,17 @@
             </tr>
         </table>
     </form>
- 
+    <script>    function MostrarContraseña() {
+        var tipo = document.getElementById("txtConfirmarcontraseña");
+
+        if (tipo.type == "password") {
+            tipo.type = "text";
+        }
+        else {
+            tipo.type = "password";
+        } 
+
+    }    </script>
   
 </body>
 </html>

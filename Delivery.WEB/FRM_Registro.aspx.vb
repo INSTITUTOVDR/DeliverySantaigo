@@ -37,11 +37,6 @@ Public Class FRM_Registro
 
     End Function
 
-    Protected Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.ServerClick
-        If txtConfirmarcontraseña.TextMode = 2 Then
-            txtConfirmarcontraseña.TextMode = 0
-        Else
-            txtConfirmarcontraseña.TextMode = 0
-        End If
-    End Sub
+
+
 End Class
