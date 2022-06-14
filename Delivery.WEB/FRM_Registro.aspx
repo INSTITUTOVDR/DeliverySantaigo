@@ -53,6 +53,8 @@
                 <td class="auto-style1">Confirmar contraseña</td>
                 <td>
                     <asp:TextBox ID="txtConfirmarcontraseña" runat="server" TextMode="Password"></asp:TextBox>
+                    <%--<asp:Button ID="Button1" runat="server" Text="Button" />--%>
+                    <button type ="submit" runat="server" ID="Button1" ></button>
                 </td>
                 <td>&nbsp;</td>
             </tr>
