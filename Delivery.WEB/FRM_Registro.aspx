@@ -18,14 +18,14 @@
             <tr>
                 <td class="auto-style1">
                         <asp:ImageButton ID="btn_Logo" runat="server" Height="200px" ImageAlign="Middle" ImageUrl="~/Imagenes/Logo.png" Width="250px" />
-                </td>
+                        Registro</td>
                 <td>
                     &nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style1" colspan="3">
-                    <hr />
+                    <hr style="color: #E51727" />
                 </td>
             </tr>
             <tr>
@@ -53,8 +53,6 @@
                 <td class="auto-style1">Confirmar contraseña</td>
                 <td>
                     <asp:TextBox ID="txtConfirmarcontraseña" runat="server" TextMode="Password"></asp:TextBox>
-                    <asp:CheckBox ID="ChbMostrar" runat="server" Text="mostrar Contraseña" />
-                    <asp:ImageButton ID="ImageButton1" runat="server" />
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -68,8 +66,8 @@
             <tr>
                 <td class="auto-style1">&nbsp;</td>
                 <td>
-                    <asp:Button ID="btnRegistro" runat="server" Text="Registar" OnClick="btnRegistro_Click" />
-                    <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" />
+                    <asp:Button ID="btnRegistro" runat="server" Text="Registar" OnClick="btnRegistro_Click" BackColor="#E51727" ForeColor="White" />
+                    <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" BackColor="#E51727" ForeColor="White" />
                 </td>
                 <td>&nbsp;</td>
             </tr>

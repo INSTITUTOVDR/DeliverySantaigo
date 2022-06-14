@@ -22,7 +22,7 @@ Public Class FRM_Registro
 
         Else
             lbl_Mensaje.ForeColor = Drawing.Color.Red
-            lbl_Mensaje.Text = "Las contraseñas no coinciden :("
+            lbl_Mensaje.Text = "Las contraseñas no coinciden"
 
         End If
 
@@ -36,7 +36,6 @@ Public Class FRM_Registro
 
 
     End Function
-
 
 
 End Class
