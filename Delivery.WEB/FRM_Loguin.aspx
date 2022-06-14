@@ -24,14 +24,14 @@
             <tr>
                 <td class="auto-style1">Usuario</td>
                 <td class="auto-style2">
-                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="Txt_Usuario" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style1">Password</td>
+                <td class="auto-style1">Contraseña</td>
                 <td class="auto-style2">
-                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txt_Contraseña" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>

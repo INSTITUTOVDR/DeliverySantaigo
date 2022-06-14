@@ -32,22 +32,22 @@ Partial Public Class FRM_Loguin
     Protected WithEvents Image1 As Global.System.Web.UI.WebControls.Image
 
     '''<summary>
-    '''Control TextBox1.
+    '''Control Txt_Usuario.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents TextBox1 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents Txt_Usuario As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''Control TextBox2.
+    '''Control txt_Contraseña.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents TextBox2 As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents txt_Contraseña As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''Control Btn_Ingresar.
