@@ -92,7 +92,6 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="FRM_Loguin.aspx" />
     <Content Include="FRM_Paises.aspx" />
 
     <Content Include="FRM_Roles.aspx" />
@@ -102,13 +101,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FRM_Loguin.aspx.designer.vb">
-      <DependentUpon>FRM_Loguin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FRM_Loguin.aspx.vb">
-      <DependentUpon>FRM_Loguin.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="FRM_Paises.aspx.designer.vb">
       <DependentUpon>FRM_Paises.aspx</DependentUpon>
     </Compile>
