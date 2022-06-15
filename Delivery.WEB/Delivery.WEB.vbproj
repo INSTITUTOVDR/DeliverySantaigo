@@ -93,9 +93,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="FRM_Paises.aspx" />
-    <Content Include="FRM_Provincias.aspx" />
+
     <Content Include="FRM_Roles.aspx" />
     <Content Include="Imagenes\Logo.png" />
+    <Content Include="Imagenes\mostrar contraseña.png" />
+    <Content Include="Imagenes\ocultar contraseña.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -106,11 +108,6 @@
       <DependentUpon>FRM_Paises.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="FRM_Provincias.aspx.designer.vb">
-      <DependentUpon>FRM_Provincias.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FRM_Provincias.aspx.vb">
-      <DependentUpon>FRM_Provincias.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="FRM_Roles.aspx.designer.vb">
