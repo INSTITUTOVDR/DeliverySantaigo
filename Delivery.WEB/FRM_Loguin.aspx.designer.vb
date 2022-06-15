@@ -23,13 +23,13 @@ Partial Public Class FRM_Loguin
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''Control Image1.
+    '''Control btn_Logo.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents Image1 As Global.System.Web.UI.WebControls.Image
+    Protected WithEvents btn_Logo As Global.System.Web.UI.WebControls.ImageButton
 
     '''<summary>
     '''Control Txt_Usuario.
@@ -50,6 +50,15 @@ Partial Public Class FRM_Loguin
     Protected WithEvents txt_Contraseña As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
+    '''Control LblMensaje.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents LblMensaje As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
     '''Control Btn_Ingresar.
     '''</summary>
     '''<remarks>
@@ -57,4 +66,13 @@ Partial Public Class FRM_Loguin
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
     Protected WithEvents Btn_Ingresar As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''Control SqlDataSource1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
 End Class
