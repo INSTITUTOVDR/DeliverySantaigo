@@ -3,9 +3,7 @@ Imports System.Data
 Imports System.Data.SqlClient
 Imports System.IO
 Imports Microsoft.Practices.EnterpriseLibrary.Data
-
 Public Class Roles
-
     Dim oDatabase As Database
 
     Public Sub New()
