@@ -18,7 +18,7 @@ Public Class Paises
 
     End Sub
 
-    Public Sub New(ByVal str As String)
+    Public Sub New(ByVal sting As String)
     End Sub
 
     Public Function BuscarPorID(ByVal ID_Pais As Integer) As DataSet
